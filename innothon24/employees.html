@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AMS</title>
+    </head>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            height: 100%;
+        }
+
+    
+        .sidebar {
+            background-color: #333;
+            color: white;
+            width: 200px;
+            padding: 30px;
+        }
+
+        .sidebar h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar li a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sidebar li a:hover {
+            background-color: #555;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar a i {
+            margin-right: 0px;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+    
+        .input-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+       .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h2{
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .input-container{
+            margin-bottom: 20px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,td{
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <h1>AMS</h1>
+                <ul>
+                    <li><a href="C:\Users\Rupesh\Desktop\innothon24\dashboard.html">Dashboard</a></li>
+                    <li><a href="C:\Users\Rupesh\Desktop\innothon24\schedule.html">Shift Schedule</a></li>
+                    <li><a href="#">Employees</a></li>
+                    <li><a href="C:\Users\Rupesh\Desktop\innothon24\attendance.html">Attendance</a></li>
+                    <li><a>Performance Matrics</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Employees</h2>
+                <div class="input-container">
+                <label class="input-label" for="name">Name:</label>
+                <input class="input-field" type="text" id="name" placeholder="Enter Name">
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="age">Age:</label>
+                <input class="input-field" type="text" id="age" placeholder="Enter age">
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="role">Role:</label>
+                <input class="input-field" type="text" id="Role" placeholder="Enter Role">
+            </div>
+            <button>Take PHoto</button>
+            <button>Train Photo</button>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Employee Name</th>
+                    <th>Age</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ahmad</td>
+                    <td>32</td>
+                    <td>Supervisor</td>
+                    <td class="status-not-uploaded">NOT UPLOADED</td>
+                  </tr>
+                  <tr>
+                    <td>Jamil</td>
+                    <td>29</td>
+                    <td>Clerk</td>
+                    <td class="status-uploaded">UPLOADED</td>
+                  </tr>
+                  <tr>
+                    <td>Ram</td>
+                    <td>27</td>
+                    <td>Office Staff</td>
+                    <td class="status-uploaded">UPLOADED</td>
+                  </tr>
+                </tbody>
+              </table>
+          
+            </div>
+            
+        </div>
+    </body>
+</html>
